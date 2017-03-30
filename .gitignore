@@ -1,0 +1,11 @@
+*.settings/
+*target/
+*.svn/
+*.project
+*.classpath
+.DS_Store
+.idea/
+*.iml
+metric_name_scope.diff
+tps-dist/tps-installer-package/lastest.zip
+_build/

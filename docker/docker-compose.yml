@@ -1,0 +1,10 @@
+eureka:
+  image: ruok/eureka-service
+  ports:
+   - "7000:7000"
+discovery:
+  image: ruok/discovery-service
+  ports:
+   - "7001:7001"
+  links:
+   - eureka
