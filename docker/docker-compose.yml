@@ -2,7 +2,7 @@ eureka:
   image: ruok/eureka-service
   ports:
    - "7000:7000"
-discovery:
+compute:
   image: ruok/discovery-service
   ports:
    - "7001:7001"
