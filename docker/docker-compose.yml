@@ -3,7 +3,7 @@ eureka:
   ports:
    - "7000:7000"
 compute:
-  image: ruok/discovery-service
+  image: ruok/compute-service
   ports:
    - "7001:7001"
   links:
