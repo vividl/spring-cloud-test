@@ -25,4 +25,12 @@ public class ComputeController {
                                                                                                                  + b));
         return a + b;
     }
+
+    @RequestMapping(value = "/minus", method = RequestMethod.GET)
+    public Integer minus(@RequestParam Integer a, @RequestParam Integer b) {
+        ServiceInstance instance = discoveryClient.getLocalServiceInstance();
+        log.info("/minus , host:" + instance.getHost() + ", server_id:" + instance.getServiceId() + ", result:" + (a
+                                                                                                                 - b));
+        return a - b;
+    }
 }
